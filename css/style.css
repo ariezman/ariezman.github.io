@@ -1,0 +1,90 @@
+html {
+    position: relative;;
+}
+
+.navbar-inverse {
+    background-color: #333;
+}
+
+body {
+    margin-bottom: 185px;
+    margin-top: 30px;
+}
+.jumbotron {
+    background-image: url('../img/secret-room.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0-120px;
+    color: #eaeaea;
+    overflow: hidden;;
+}
+.jumbotron img {
+    width: 200px;
+    border: 5px solid #666;
+    box-shadow: 1px 1px 10px rgba(0,0,0.5);
+}
+.jumbotron h1, jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0,0,0.5);
+}
+
+hr {
+    width: 250px;
+    border-top:4px solid #999;
+}
+
+section {
+    min-height: 600px;
+}
+
+.pLeft, .pRight {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 5s;
+    font-size: 17px;
+    font-family: cursive;
+}
+
+.pRight {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pLeft.pShow, .pRight.pShow {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portfolio {
+    min-height: 800px;
+    background-color: #eaeaea;
+}
+
+.portfolio .thumbnail {
+     opacity: 0;
+     transform: translate(0, -40px);
+     transition: .5s;
+}
+
+.portfolio .thumbnail.showOn {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 185px;
+    background-color: #333;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #eaeaea;
+    font-size: 0.9em;
+} 
+
+/*
+<!-- LIVE CHAT -->
+    ## <p><a href="https://api.whatsapp.com/send?phone=6289631604548&text=Hi%20Bro%20How Are You"><img src="img/tombol.png"></a></p>
+ <!-- Ends LIVE CHAT -->
+*/
